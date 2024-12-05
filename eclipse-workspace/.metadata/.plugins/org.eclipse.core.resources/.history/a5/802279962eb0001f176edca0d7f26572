@@ -1,0 +1,64 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class CustomerDashboard extends JFrame {
+    private User currentUser;
+
+    public CustomerDashboard(User user) {
+        this.currentUser = user;
+        setTitle("Customer Dashboard");
+        setSize(500, 400);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+
+        JPanel panel = new JPanel(new GridLayout(6, 1, 10, 10));
+        panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
+        JLabel welcomeLabel = new JLabel("Welcome, " + currentUser.getFullName());
+        panel.add(welcomeLabel);
+
+        // Buttons for different actions
+        JButton viewAccountsButton = new JButton("View Accounts");
+        JButton requestAccountButton = new JButton("Request New Account");
+        JButton transactionButton = new JButton("Make Transaction");
+        JButton appointmentButton = new JButton("Book Appointment");
+        JButton logoutButton = new JButton("Logout");
+
+        // Add action listeners
+        viewAccountsButton.addActionListener(e -> showAccounts());
+        requestAccountButton.addActionListener(e -> requestAccount());
+        transactionButton.addActionListener(e -> makeTransaction());
+        appointmentButton.addActionListener(e -> bookAppointment());
+        logoutButton.addActionListener(e -> logout());
+
+        // Add buttons to panel
+        panel.add(viewAccountsButton);
+        panel.add(requestAccountButton);
+        panel.add(transactionButton);
+        panel.add(appointmentButton);
+        panel.add(logoutButton);
+
+        add(panel);
+    }
+
+    private void showAccounts() {
+        // Implement account viewing logic
+    }
+
+    private void requestAccount() {
+        // Implement account request logic
+    }
+
+    private void makeTransaction() {
+        // Implement transaction logic
+    }
+
+    private void bookAppointment() {
+        // Implement appointment booking logic
+    }
+
+    private void logout() {
+        dispose();
+        new LoginFrame().setVisible(true);
+    }
+}

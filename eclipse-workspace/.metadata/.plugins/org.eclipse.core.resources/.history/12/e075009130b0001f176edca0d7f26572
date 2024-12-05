@@ -1,0 +1,68 @@
+import javax.swing.*;
+import java.awt.*;
+import java.sql.Connection;
+import javax.swing.table.DefaultTableModel;
+
+public class AdminDashboard extends JFrame {
+    private User currentUser;
+    private Connection connection;
+
+    public AdminDashboard(User user, Connection connection) {
+        this.currentUser = user;
+        this.connection = connection;
+        setTitle("Admin Dashboard");
+        setSize(600, 400);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+
+        JPanel panel = new JPanel(new GridLayout(6, 1, 10, 10));
+        panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
+        JLabel welcomeLabel = new JLabel("Welcome, Administrator " + currentUser.getFullName());
+        panel.add(welcomeLabel);
+
+        // Buttons for different actions
+        JButton createEmployeeButton = new JButton("Create Employee Account");
+        JButton manageUsersButton = new JButton("Manage Users");
+        JButton manageAccountsButton = new JButton("Manage Bank Accounts");
+        JButton systemSettingsButton = new JButton("System Settings");
+        JButton logoutButton = new JButton("Logout");
+
+        // Add action listeners
+        createEmployeeButton.addActionListener(e -> createEmployee());
+        manageUsersButton.addActionListener(e -> manageUsers());
+        manageAccountsButton.addActionListener(e -> manageAccounts());
+        systemSettingsButton.addActionListener(e -> systemSettings());
+        logoutButton.addActionListener(e -> logout());
+
+        // Add buttons to panel
+        panel.add(createEmployeeButton);
+        panel.add(manageUsersButton);
+        panel.add(manageAccountsButton);
+        panel.add(systemSettingsButton);
+        panel.add(logoutButton);
+
+        add(panel);
+    }
+
+    private void createEmployee() {
+        // Implement using connection
+    }
+
+    private void manageUsers() {
+        // Implement using connection
+    }
+
+    private void manageAccounts() {
+        // Implement using connection
+    }
+
+    private void systemSettings() {
+        // Implement using connection
+    }
+
+    private void logout() {
+        dispose();
+        new LoginFrame(connection).setVisible(true);
+    }
+}

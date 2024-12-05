@@ -1,0 +1,90 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class LoginFrame extends JFrame {
+    private JTextField usernameField;
+    private JPasswordField passwordField;
+
+    public LoginFrame() {
+        setTitle("Bank Management System");
+        setSize(400, 200);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+
+        JPanel panel = new JPanel(new GridLayout(3, 2, 10, 10));
+        panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
+        // Username
+        panel.add(new JLabel("Username:"));
+        usernameField = new JTextField();
+        panel.add(usernameField);
+
+        // Password
+        panel.add(new JLabel("Password:"));
+        passwordField = new JPasswordField();
+        panel.add(passwordField);
+
+        // Login button
+        JButton loginButton = new JButton("Login");
+        JButton createAccountButton = new JButton("Create Account");
+
+        loginButton.addActionListener(e -> handleLogin());
+        createAccountButton.addActionListener(e -> showCreateAccountDialog());
+
+        panel.add(loginButton);
+        panel.add(createAccountButton);
+
+        add(panel);
+    }
+
+    private void handleLogin() {
+        String username = usernameField.getText();
+        String password = new String(passwordField.getPassword());
+
+        if (username.isEmpty() || password.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Please fill in all fields");
+            return;
+        }
+
+        // Add your login logic here
+    }
+
+    private void showCreateAccountDialog() {
+        JDialog dialog = new JDialog(this, "Create Account", true);
+        dialog.setSize(400, 300);
+        dialog.setLocationRelativeTo(this);
+
+        JPanel panel = new JPanel(new GridLayout(5, 2, 10, 10));
+        panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
+        panel.add(new JLabel("Username:"));
+        JTextField newUsername = new JTextField();
+        panel.add(newUsername);
+
+        panel.add(new JLabel("Password:"));
+        JPasswordField newPassword = new JPasswordField();
+        panel.add(newPassword);
+
+        panel.add(new JLabel("Full Name:"));
+        JTextField fullName = new JTextField();
+        panel.add(fullName);
+
+        panel.add(new JLabel("Address:"));
+        JTextField address = new JTextField();
+        panel.add(address);
+
+        JButton createButton = new JButton("Create");
+        createButton.addActionListener(e -> {
+            // Add account creation logic here
+            dialog.dispose();
+        });
+
+        panel.add(createButton);
+        dialog.add(panel);
+        dialog.setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> new LoginFrame().setVisible(true));
+    }
+}

@@ -1,0 +1,68 @@
+import javax.swing.*;
+import java.awt.*;
+import java.sql.Connection;
+import javax.swing.table.DefaultTableModel;
+
+public class EmployeeDashboard extends JFrame {
+    private User currentUser;
+    private Connection connection;
+
+    public EmployeeDashboard(User user, Connection connection) {
+        this.currentUser = user;
+        this.connection = connection;
+        setTitle("Employee Dashboard");
+        setSize(600, 400);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+
+        JPanel panel = new JPanel(new GridLayout(6, 1, 10, 10));
+        panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
+        JLabel welcomeLabel = new JLabel("Welcome, " + currentUser.getFullName());
+        panel.add(welcomeLabel);
+
+        // Buttons for different actions
+        JButton viewCustomersButton = new JButton("View Customers");
+        JButton manageAccountsButton = new JButton("Manage Bank Accounts");
+        JButton approveRequestsButton = new JButton("Account Requests");
+        JButton appointmentsButton = new JButton("View Appointments");
+        JButton logoutButton = new JButton("Logout");
+
+        // Add action listeners
+        viewCustomersButton.addActionListener(e -> viewCustomers());
+        manageAccountsButton.addActionListener(e -> manageAccounts());
+        approveRequestsButton.addActionListener(e -> handleRequests());
+        appointmentsButton.addActionListener(e -> viewAppointments());
+        logoutButton.addActionListener(e -> logout());
+
+        // Add buttons to panel
+        panel.add(viewCustomersButton);
+        panel.add(manageAccountsButton);
+        panel.add(approveRequestsButton);
+        panel.add(appointmentsButton);
+        panel.add(logoutButton);
+
+        add(panel);
+    }
+
+    private void viewCustomers() {
+        // Implement using connection
+    }
+
+    private void manageAccounts() {
+        // Implement using connection
+    }
+
+    private void handleRequests() {
+        // Implement using connection
+    }
+
+    private void viewAppointments() {
+        // Implement using connection
+    }
+
+    private void logout() {
+        dispose();
+        new LoginFrame(connection).setVisible(true);
+    }
+}
