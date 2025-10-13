@@ -2,7 +2,7 @@
 
 **Digital Craftsman (Developer/Student)**
 
-👋 I am currently a full-time student in my senior year at the New York Institute of Technology pursuing a computer science degree. I am aspiring to continue my work in machine learning and AI from there!
+👋 I am currently a full-time student in my senior year at the New York Institute of Technology pursuing a computer science degree. My long-term focus is in building a career at the intersection of technology, innovation, and impact. My goal is to bridge real world operational experience with cutting edge technical skills to create solutions that matter.
 
 ###
 
