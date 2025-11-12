@@ -16,7 +16,7 @@
 
 ## About Me
 
-I'm a senior Computer Science student at NYIT with a unique background in operations management. Before diving into software development, I spent years optimizing business operations—which taught me to think about problems from both technical and practical perspectives.
+I'm a senior Computer Science student at NYIT with a unique background in operations management. Before diving into software development, I spent years optimizing business operations which has taught me to think about problems from both technical and practical perspectives.
 
 My approach is simple: build technology that solves real problems and creates measurable impact. Whether it's improving inventory accuracy, reducing data entry errors, or building ML models for predictive analytics, I focus on solutions that matter.
 
