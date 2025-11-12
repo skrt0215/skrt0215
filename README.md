@@ -76,26 +76,6 @@ My approach is simple: build technology that solves real problems and creates me
 
 ---
 
-## Current Focus
-
-**Learning:** Advanced React Patterns, Cloud Architecture, Ethical Hacking  
-**Building:** Full-Stack Applications, Security Tools, ML Models  
-**Reading:** Clean Code, Harry Potter, System Design Primer  
-**Goal:** Start my career and to help make a difference in the world
-
----
-
-## Highlights & Achievements
-
-- **Senior @ NYIT** - BS in Computer Science
-- **Security Operations** - 2025 Presidential Inauguration Coordination
-- **Operations Impact** - Improved inventory accuracy by 37% (57% → 94%)
-- **Innovation** - Reduced data entry errors by 70%+ with NFC technology
-- **Machine Learning** - Built NFL prediction model with 68.87% accuracy
-- **Process Optimization** - Automated workflows saving 20+ hours/week
-
----
-
 ## Let's Connect
 
 I am always open to chat or help with anything you may want to reach out about. Feel free to hit me up!
