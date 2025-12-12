@@ -53,20 +53,6 @@ My approach is simple: build technology that solves real problems and creates me
 
 </div>
 
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-  
-![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=skrt0215&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=skrt0215&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117)
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=skrt0215&theme=tokyonight&hide_border=true&background=0D1117)
-
-</div>
-
 ![Profile Views](https://komarev.com/ghpvc/?username=skrt0215&color=blueviolet&style=flat-square)
 
 </div>
