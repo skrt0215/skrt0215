@@ -63,15 +63,6 @@ Currently building enterprise security software for 24/7 SOC operations, includi
 
 ---
 
-## Current Focus
-
-- Building enterprise security operations platforms
-- Real-time GPS tracking and geospatial visualization
-- Third-party API integrations (Geotab, HubSpot, eHub)
-- Application security hardening
-
----
-
 ![Profile Views](https://komarev.com/ghpvc/?username=skrt0215&color=blueviolet&style=flat-square)
 
 </div>
