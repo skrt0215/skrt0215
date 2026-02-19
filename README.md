@@ -16,8 +16,6 @@
 
 I'm a senior Computer Science student at NYIT with a background in operations management. Before software development, I spent years optimizing business operations and experience that shapes how I approach technical problems today.
 
-Currently building enterprise security software for 24/7 SOC operations, including real-time fleet tracking, AI-powered incident triage, and third-party API integrations. I focus on solutions that create measurable impact: improving operational efficiency, automating workflows, and building systems that scale.
-
 ---
 
 ## Tech Arsenal
