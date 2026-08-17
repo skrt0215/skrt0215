@@ -5,7 +5,7 @@
 ### Full-Stack Developer | Builder | Problem Solver
 
 Computer Science graduate who builds and ships production software.
-Relocating to Charlotte, NC | September 2026
+Recently relocated to Charlotte, NC
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-2E6FB8?style=for-the-badge&logo=vercel&logoColor=white)](https://skrt0215port.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/stevenk1998/)
